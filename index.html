@@ -1,1 +1,45 @@
-HOLI loco sistemas
+<html>
+    <title>Clase 01</title>
+    <body>
+
+    </body>
+    <script>
+
+        //JSON
+        const areasyalturas = [
+            {
+                "base": 12,
+                "altura": 6
+            },
+            {
+                "base": 24,
+                "altura": 13
+            },
+            {
+                "base": 12,
+                "altura": 8
+            },
+            {
+                "base": 18,
+                "altura": 10
+            },
+            {
+                "base": 20,
+                "altura": 15
+            },
+           
+        ];  
+        function areadetriangulos(base, altura) {
+             var area=(base * altura)/2;
+                console.log("El area del triangulo es :"+area);
+            
+        }
+        /*for (let i=0; i<edades.length; i++){
+            console.log(edades[i]+1);
+        } */
+        areasyalturas.forEach((e) => {
+            // es legal
+            areadetriangulos(e.base, e.altura);            
+        });
+    </script>
+</html>
